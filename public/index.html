@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <input id="username-input" type="text" placeholder="Enter your username">
+        <input id="password-input" type="password" placeholder="Enter your password">
+        <button id="login-button">Login</button>
+        <button id="register-link">Register</button>
+    </div>
+
+    <div id="register-container" style="display:none;">
+        <h2>Register</h2>
+        <input id="reg-username-input" type="text" placeholder="Enter your username">
+        <input id="reg-password-input" type="password" placeholder="Enter your password">
+        <button id="register-button">Register</button>
+        <button id="login-link">Back to Login</button>
+    </div>
+
+    <div id="chat-container">
+        <div id="user-list"></div>
+        <div id="message-container"></div>
+        <div id="input-container">
+            <input id="message-input" type="text" placeholder="Type a message">
+            <button id="send-button">Send</button>
+            <button id="logout-button">Logout</button>
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>

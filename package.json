@@ -1,0 +1,22 @@
+{
+  "name": "chat-room",
+  "version": "1.0.0",
+  "main": "chat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.10.3",
+    "socket.io": "^4.7.5"
+  }
+}
